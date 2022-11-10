@@ -1,3 +1,11 @@
-function removeExclamationMarks(s) {
-  return s.slice(0,s.length-1);
+function testEven(n) {
+    if((n%2) == 0){
+      return true;
+    }
+    if(n == 0.5){
+      return false;
+    }
+  if(n == 1){
+    return false;
+  }
 }
