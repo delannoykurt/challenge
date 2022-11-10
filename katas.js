@@ -1,6 +1,8 @@
-function setAlarm(employed, vacation){
-  if(employed == true && vacation == true) return false;
-  if(employed == false && vacation == true) return false;
-  if(employed == false && vacation == false) return false;
-  if(employed == true && vacation == false) return true;
+function abbrevName(name){
+
+    let t = name.search(" ");
+    let f = name[0];
+    let l = name[t+1];
+    return f.toUpperCase() + "." + l.toUpperCase();
+
 }
