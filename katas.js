@@ -1,9 +1,9 @@
-function check(a, x) {
-  // your code here
-  for(let n in a){
-    if(a[n] === x){
-      return true;
-    }
-  }
-  return false;
+function updateLight(current) {
+  
+  // green, yellow, red ...
+  
+  if(current == "green") return "yellow";
+  if(current == "yellow") return "red";
+  if(current == "red") return "green";
+
 }
