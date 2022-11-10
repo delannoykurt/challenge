@@ -1,11 +1,9 @@
-function cockroachSpeed(s) {
-  // km/h -> cm
-  if(s == 0){
-    return 0;
+function check(a, x) {
+  // your code here
+  for(let n in a){
+    if(a[n] === x){
+      return true;
+    }
   }
-  
-  if(s > 1){
-    return 30;
-  }
-  
+  return false;
 }
