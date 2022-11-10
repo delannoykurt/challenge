@@ -1,4 +1,4 @@
-function numberToString(num) {
-  // Return a string of the number here!
-  return num.toString();
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i*2;
 }
