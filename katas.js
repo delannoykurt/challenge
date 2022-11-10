@@ -1,22 +1,10 @@
-function DNAStrand(dna){
-  //your code here
-  switch(dna){
-      case "AAAA": return "TTTT"; break;
-      case "ATTGC": return "TAACG"; break;
-      case "GTAT": return "CATA"; break;
+function positiveSum(arr) {
+  let r = 0;
+  for(let n in arr){
+    if(arr[n] < 0){
+      arr[n] = 0;
+    }
+    r += arr[n];
   }
-  
-  if(dna.charAt() == "A"){
-    dna[dna.charAt()] = "T";
-  }
-   if(dna.charAt() == "T"){
-    dna[dna.charAt()] = "A";
-  }
-  if(dna.charAt() == "G"){
-    dna[dna.charAt()] = "C";
-  }
-   if(dna.charAt() == "C"){
-    dna[dna.charAt()] = "G";
-  }
+  return r;
 }
-
