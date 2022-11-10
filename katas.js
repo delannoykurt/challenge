@@ -1,7 +1,19 @@
-function paperwork(n, m) {
-  if(n < 0 || m < 0) {
-    return 0;
+function bmi(weight, height) {
+  let r = weight/height/height;
+  
+  if(r <= 18.5){
+     return "Underweight";
   }
   
-  return n*m;
-}
+  if(r <= 25.0){
+     return "Normal";
+  }
+  
+  if(r <= 30.0){
+     return "Overweight";
+  }
+  
+  if(r > 30){
+     return "Obese";
+  }
+  
