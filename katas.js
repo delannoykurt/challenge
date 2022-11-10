@@ -1,14 +1,12 @@
-function testEven(n) {
-  if((n % 2) == 0){
-    return true;
+const reverseSeq = n => {
+  let tmp = [];
+  let i = 0;
+  if(n>0){
+    while(n>0){
+      tmp[i] = n;
+      n--;
+      i++;
+    }
   }
-  if((n % 3) == 0){
-    return false;
-  }
-  if((n % 2) == 0.5){
-    return false;
-  }
-  if((n % 2) == 1){
-    return false;
-  }
-}
+  return tmp;
+};
