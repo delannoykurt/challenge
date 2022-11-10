@@ -1,4 +1,4 @@
-function doubleInteger(i) {
-  // i will be an integer. Double it and return it.
-  return i*2;
+function greet(name){
+  //your code here 
+  return `Hello, ${name} how are you doing today?`;
 }
