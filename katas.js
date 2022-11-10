@@ -1,4 +1,7 @@
-function greet(name){
-  //your code here 
-  return `Hello, ${name} how are you doing today?`;
+function paperwork(n, m) {
+  if(n < 0 || m < 0) {
+    return 0;
+  }
+  
+  return n*m;
 }
