@@ -1,10 +1,8 @@
-function positiveSum(arr) {
+function findAverage(array) {
+  // your code here
   let r = 0;
-  for(let n in arr){
-    if(arr[n] < 0){
-      arr[n] = 0;
-    }
-    r += arr[n];
+  for(let n in array){
+    r += array[n];
   }
-  return r;
+ return r / array.length;
 }
