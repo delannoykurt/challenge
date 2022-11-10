@@ -1,3 +1,4 @@
-function repeatStr (n, s) {
-  return s.repeat(n);
+function booleanToString(b){
+  //your code here
+  return b.toString();
 }
