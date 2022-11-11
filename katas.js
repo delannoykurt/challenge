@@ -1,9 +1,5 @@
-function isPalindrome(x) {
-  if(x.length == 1) return true;
-  if(x == "") return true;
-  if(x == "hello") return false;
-  
-  let t = Object.assign([], x);
-  if(t.reverse() == t) return true;
-  return false;
+function otherAngle(a, b) {
+  if((a > 0 && b > 0)){
+    return (180-(a+b));
+  }
 }
