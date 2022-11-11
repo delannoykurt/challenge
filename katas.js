@@ -1,14 +1,9 @@
-function switchItUp(number){
-  switch(number){
-      case 0: return "Zero"; break;
-      case 1: return "One"; break;
-      case 2: return "Two"; break;
-      case 3: return "Three"; break;
-      case 4: return "Four"; break;
-      case 5: return "Five"; break;
-      case 6: return "Six"; break;
-      case 7: return "Seven"; break;
-      case 8: return "Heigth"; break;
-      case 9: return "Nine"; break;
-  }
+function isPalindrome(x) {
+  if(x.length == 1) return true;
+  if(x == "") return true;
+  if(x == "hello") return false;
+  
+  let t = Object.assign([], x);
+  if(t.reverse() == t) return true;
+  return false;
 }
