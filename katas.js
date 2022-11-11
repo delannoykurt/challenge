@@ -4,6 +4,6 @@ function arithmetic(a, b, operator){
   if(operator == "multiply") return a * b;
   if(operator == "divide") {
     if(a == 0) return 1;
-    return Math.round(a/b);
+    return Math.floor(a/b);
   }
 }
