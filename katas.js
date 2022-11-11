@@ -1,4 +1,5 @@
-function hoopCount (n) {
-   if(n > 10)  return "Great, now move on to tricks";
-    return "Keep at it until you get it";
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    return length * width * height;
+  }
 }
