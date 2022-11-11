@@ -1,5 +1,6 @@
-function otherAngle(a, b) {
-  if((a > 0 && b > 0)){
-    return (180-(a+b));
-  }
+const quarterOf = (month) => {
+  if(month <= 3) return 1;
+  if(month <= 6) return 2;
+  if(month <= 9) return 3;
+  if(month <= 12) return 4;
 }
