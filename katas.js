@@ -1,9 +1,5 @@
-var number=function(array){
-  if(array == []) return array;
-  let i = 0;
-  for(let n in array){
-    array[n] = String(i+1) + ": " + array[i];
-    i++;
-  }
-  return array;
+function hero(bullets, dragons){
+  if(bullets == 0) return false;
+  if(bullets>=dragons*2) return true;
+  return false;
 }
