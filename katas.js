@@ -1,12 +1,3 @@
-function strCount(str, letter){  
-  let l = 0;
-  if(str == ""){
-    return 0;
-  }
-  for(let i = 0; i < str.length; i++){
-    if(str[i] == letter){
-      l++;
-    }
-  }
-  return l;
+function saleHotdogs(n){
+  return (n < 5) ? n*100 : (n >= 5 && n < 10) ? n*95 : (n >= 10) ? n*90 : 0;
 }
