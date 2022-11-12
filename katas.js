@@ -1,7 +1,6 @@
-function greet (name, owner) {
-  if(name === owner){
-    return 'Hello boss';
-  } else {
-    return 'Hello guest';
+function invert(array) {
+  for(let i = 0 ; i < array.length; i++){
+    array[i] = -array[i];
   }
+  return array;
 }
