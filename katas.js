@@ -1,7 +1,6 @@
-function countSheeps(arrayOfSheep) {
-  let n = 0;
-  for(let i = 0; i < arrayOfSheep.length; i++){
-    if(arrayOfSheep[i] == true) n++;
+function lovefunc(flower1, flower2){
+  if((flower1%2) == 0 && (flower2%2) == 0){
+    return false;
   }
-  return n;
+  return true;
 }
