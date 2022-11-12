@@ -1,5 +1,7 @@
-function hero(bullets, dragons){
-  if(bullets == 0) return false;
-  if(bullets>=dragons*2) return true;
-  return false;
+function countSheeps(arrayOfSheep) {
+  let n = 0;
+  for(let i = 0; i < arrayOfSheep.length; i++){
+    if(arrayOfSheep[i] == true) n++;
+  }
+  return n;
 }
