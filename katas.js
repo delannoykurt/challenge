@@ -1,9 +1,5 @@
-function areYouPlayingBanjo(name) {
-  for(let i = 0; i < name.length; i++){
-    if(name[i] == "R" || name[i] == "r"){
-      return name + " plays banjo";
-    } else {
-      return name + " does not play banjo";
-    }
-  }
-}
+var laLigaGoals = 43;
+var championsLeagueGoals = 10;
+var copaDelReyGoals = 5;
+
+var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
