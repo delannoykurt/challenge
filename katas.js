@@ -1,12 +1,14 @@
-var countSheep = function (num){
-  
-  let s = "";
-  if(num == 0){
-    return "";
+function getRealFloor(n) {
+  if(n == 1){
+    return 0;
+  } else {
+    if(n > 1 && n < 13) {
+      return n-1;
+    } else if(n >13){
+      return n-2;
+    }
   }
-  
-  for(let i = 1; i < num+1; i++){
-    s += i + " sheep...";
+  if(n < 0){
+    return n;
   }
-  return s;
 }
