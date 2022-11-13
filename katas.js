@@ -1,3 +1,6 @@
-function saleHotdogs(n){
-  return (n < 5) ? n*100 : (n >= 5 && n < 10) ? n*95 : (n >= 10) ? n*90 : 0;
+function sumStr(a,b) {
+  a = Number(a);
+  b = Number(b);
+  let r = a + b;
+  return r.toString();
 }
