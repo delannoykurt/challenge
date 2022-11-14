@@ -1,8 +1,12 @@
-function enough(cap, on, wait) {
-  let r = on + wait;
-  if(r > cap){
-    return r - cap;
-  } else {
-    return 0;
+function getSum( a,b )
+{
+   if(a == b){
+     return 1;
+   }
+  if(a + b >= 1) {
+    return 1;
+  }
+  if(a < 0 || b < 0){
+    return -1;
   }
 }
