@@ -1,14 +1,17 @@
-function switchItUp(number){
-  switch(number){
-      case 0: return "Zero"; break;
-      case 1: return "One"; break;
-      case 2: return "Two"; break;
-      case 3: return "Three"; break;
-      case 4: return "Four"; break;
-      case 5: return "Five"; break;
-      case 6: return "Six"; break;
-      case 7: return "Seven"; break;
-      case 8: return "Height"; break;
-      case 9: return "Nine"; break;
-      
+function correct(string)
+{
+  let tmp = Object.assign([], string);
+  
+  for(let i = 0; i < tmp.length; i++){
+    if(tmp[i] == '0'){
+      tmp[i] = 'O';
+    }
+    if(tmp[i] == '1'){
+      tmp[i] = 'I';
+    }
+    if(tmp[i] == '5'){
+      tmp[i] = 'S';
+    }
   }
+  return tmp.join().replace(/,/g, '');
+}
