@@ -1,8 +1,8 @@
-function index(array, n){
-  let indice = array[n];
-  
-  if(n > array.length) return -1;
-  
-  let r = indice**n;
-  return r;
+function enough(cap, on, wait) {
+  let r = on + wait;
+  if(r > cap){
+    return r - cap;
+  } else {
+    return 0;
+  }
 }
