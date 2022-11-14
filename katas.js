@@ -1,3 +1,3 @@
-function testEven(n) {
-  return ((n%2) == 0) ? true : false;
+function move (position, roll) {
+  return roll * 2 + position;
 }
