@@ -1,17 +1,6 @@
-function correct(string)
-{
-  let tmp = Object.assign([], string);
+function cockroachSpeed(s) {
+  // 60 -> 3600
+  if(s == 0) return 0;
+  return Math.floor((s*60/2)-s*2);
   
-  for(let i = 0; i < tmp.length; i++){
-    if(tmp[i] == '0'){
-      tmp[i] = 'O';
-    }
-    if(tmp[i] == '1'){
-      tmp[i] = 'I';
-    }
-    if(tmp[i] == '5'){
-      tmp[i] = 'S';
-    }
-  }
-  return tmp.join().replace(/,/g, '');
 }
