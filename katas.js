@@ -1,8 +1,3 @@
-function smash (words) {
-   if(words == []){
-     return "";
-   }
-   let s = words.toString();
-   s = s.replace(/,/g, " ");
-   return s;
-};
+function problem(x){
+  return (typeof x == 'string' || x === "") ? "Error" : x*50+6;
+}
