@@ -1,4 +1,7 @@
-function checkForFactor (base, factor) {
-  if(base == 0) return false;
-  return (Math.floor(base%factor) == 0) ? true : false;
+function sumMix(x){
+  let t = 0;
+  x.forEach((v) => {
+    t += Number(v);
+  });
+  return t;
 }
