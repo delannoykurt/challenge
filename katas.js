@@ -1,12 +1,12 @@
-function finalGrade (exam, projects) {
+function roundToNext5(n){
   
-  if(exam > 90 || projects > 10){
-    return 100;
-  } else if(exam > 75 && projects >= 5){
-    return 90;
-  } else if(exam > 50 && projects >= 2){
-    return 75;
+  if((n%5) == 0){
+    return n;
   } else {
-    return 0;
+    // premier chiffre correspondant avnt - apres
+    while((n%5!=0)){
+      n++;
+    }
+    return n;
   }
 }
