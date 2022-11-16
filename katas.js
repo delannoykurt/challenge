@@ -1,3 +1,4 @@
-function hexToDec(hexString){
-  return parseInt(hexString, 16);
+function maps(x){
+  x = x.map(v => v*2);
+  return x;
 }
