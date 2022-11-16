@@ -1,16 +1,7 @@
-function toCsvText(array) {
-  let res = [];
-  for(let num of array){
-    res.push(num);
+function arr(N){
+  let r = [];
+  for(let i = 0; i < N; i++){
+    r.push(i);
   }
-  res = res.join(' ');  // '1,2,3,4,5...'
-  
-  for(let i in res){
-    if(res[i] == ' '){
-      res[i] = '\'\n+\'';
-    }
-  }
-  
-  return res.split(' ').join('\n');
-  
+  return r;
 }
