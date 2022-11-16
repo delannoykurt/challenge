@@ -1,7 +1,13 @@
-function grow(x){
-  let tmp = x[0];
-  for(let i = 0; i < x.length-1; i++){
-    tmp = tmp * x[i+1];
+function fakeBin(x){
+  
+  x = x.split('');
+  for(let i = 0; i < x.length; i++){
+    if(x[i] == '5' || x[i] > '5'){
+      x[i] = '1';
+    } else {
+      x[i] = '0';
+    }
   }
-  return tmp;
+  x = x.join('');
+  return x;
 }
