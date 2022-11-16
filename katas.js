@@ -1,3 +1,3 @@
-var a = "code";
-var b = "wa.rs";
-var name = a + b;
+function buildString(...template){
+  return `I like ${template.join(', ')}!`;
+}
