@@ -1,13 +1,16 @@
-function fakeBin(x){
-  
-  x = x.split('');
-  for(let i = 0; i < x.length; i++){
-    if(x[i] == '5' || x[i] > '5'){
-      x[i] = '1';
-    } else {
-      x[i] = '0';
+function filter_list(l) {
+  for(let i =0; i < l.length; i++){
+    if(typeof l[i] != 'number'){
+      l[i] = -1;
     }
   }
-  x = x.join('');
-  return x;
+  let t = [];
+  for(let i = 0; i < l.length; i++){
+    if(l[i] >= 0){
+      t.push(l[i]);
+    }
+  }
+  l = t;
+  
+  return l;
 }
