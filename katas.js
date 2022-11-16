@@ -1,4 +1,3 @@
-function maps(x){
-  x = x.map(v => v*2);
-  return x;
+function combat(health, damage) {
+  return (damage > health) ? 0 : health - damage;
 }
