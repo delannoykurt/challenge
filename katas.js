@@ -1,7 +1,10 @@
-function arr(N){
-  let r = [];
-  for(let i = 0; i < N; i++){
-    r.push(i);
+function removeExclamationMarks(s) {
+  let t = [];
+  t = s.split('');
+  for(let i in t){
+    if(t[i] == '!'){
+      t[i] = '';
+    }
   }
-  return r;
+  return t.join('');
 }
