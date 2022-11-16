@@ -1,12 +1,11 @@
-function roundToNext5(n){
-  
-  if((n%5) == 0){
-    return n;
-  } else {
-    // premier chiffre correspondant avnt - apres
-    while((n%5!=0)){
-      n++;
-    }
-    return n;
+function peopleWithAgeDrink(old) {
+  if(old < 14){
+    return 'drink toddy';
+  }else if(old < 18){
+     return 'drink coke';
+  }else if(old < 21){
+     return 'drink beer';
+  }else if(old >= 21){
+     return 'drink whisky';
   }
-}
+};
