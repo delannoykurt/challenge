@@ -1,16 +1,12 @@
-var humanYearsCatYearsDogYears = function(humanYears) {
-  let a = 15;
-  let b = 9;
-  let c = 4;
-  let d = 5;
-  let cat = a;
-  let dog = a;
-  if(humanYears == 1){
-    return [humanYears, cat, dog];
-  } else if(humanYears == 2){
-    return [humanYears, cat+b, dog+b];
-  } else if(humanYears >= 3){
-    return [humanYears, cat+b+((humanYears-2) *c), dog+b+((humanYears-2)*d)];
-  }
+function finalGrade (exam, projects) {
   
+  if(exam > 90 || projects > 10){
+    return 100;
+  } else if(exam > 75 && projects >= 5){
+    return 90;
+  } else if(exam > 50 && projects >= 2){
+    return 75;
+  } else {
+    return 0;
+  }
 }
