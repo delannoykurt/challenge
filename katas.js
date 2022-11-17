@@ -1,10 +1,3 @@
-
-let max = function(list){
-  let t = list.sort((a,b) => a - b);
-  return t[t.length-1];
-}
-
-let min = function(list){
-  let t = list.sort((a,b) => a - b);
-  return t[0];
-}
+var quote = function(fighter) {
+  return (fighter.toLowerCase() === 'george saint pierre') ? "I am not impressed by your performance." : `I'd like to take this chance to apologize.. To absolutely NOBODY!`;
+};
