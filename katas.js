@@ -1,3 +1,5 @@
-function buildString(...template){
-  return `I like ${template.join(', ')}!`;
+function doubleChar(str) {
+  let s = [...str];
+  s = s.map(v => v+v);
+  return s.join('');
 }
