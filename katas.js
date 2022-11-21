@@ -1,21 +1,9 @@
-function howManydays(month){
-  var days;
-  switch (month){
-      case 1:
-      case 3:
-      case 5:
-      case 7:
-      case 8:
-      case 10:
-      case 12:
-      days = 31;
-      break;
-    case 2:
-      days = 28;
-      break;
-    default:
-      days =30;
-      break;
+function lovefunc(flower1, flower2){
+  if(flower1 == 0 && flower2 == 1) return true;
+  if(flower1%2==0 && flower2%2==0 || flower1%2==1 && flower2%2== 1){
+    return false;
+  } else {
+    return true;
   }
-  return days;
+  
 }
