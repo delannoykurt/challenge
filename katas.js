@@ -1,13 +1,7 @@
-function twiceAsOld(dadYearsOld, sonYearsOld) {
-  let age = sonYearsOld - dadYearsOld;
-  if(age == 0){
-    return 0;
-  } else {
-    let a =  sonYearsOld*2-dadYearsOld;
-    if(a < 0){
-      return a*-1;
-    } else {
-      return a;
-    }
-  }
+function digitize(n) {
+  let s = n.toString();
+  s.split('').join(',');
+  let result = s.split('').reverse();
+  let r = result.map(v => Number(v));
+  return r;
 }
