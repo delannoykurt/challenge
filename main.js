@@ -13,5 +13,7 @@ function josephus() {
 	return nPrisoners;
 }
 
-
+// -------------------
 console.log(josephus());
+
+// to be continued ...
